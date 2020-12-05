@@ -70,7 +70,7 @@ const scoreFind = async (message) => {
         .setDescription(`Hey ${targetParameter}, you look nice today!`) //```\
         //.setTitle(`${environment('PROJECT_NAME')} Ledger`)
         .setURL(environment('GITHUB_LEDGER_EXPLORER_PATH')) //
-        .setTimestamp()
+        //.setTimestamp()
         .setThumbnail(
           'https://raw.githubusercontent.com/sourcecred/sourcecred/master/src/assets/logo/rasterized/logo_64.png',
         )
@@ -101,7 +101,7 @@ const scoreFind = async (message) => {
           'https://wiki.metagame.wtf/img/mg-crystal.png',
         )*/
       message.reply(embed)
-      return log(`Fetched XP for user ${targetParameter}`)
+      return log(`Fetched cred for user ${targetParameter}`)
     }
     log(`${targetParameter} not found in accounts.json`)
     return message.reply(`looks like we couldn't find ${targetParameter}! Make sure to register to use this command!`)

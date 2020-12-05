@@ -50,7 +50,7 @@ const scoreFind = async (message) => {
 
     // Fetch accounts.json containing the xp
     const credAccounts = await (
-      await fetch(`https://raw.githubusercontent.com/${environment('GITHUB_ACCOUNT_FILE_PATH')}`,
+      await fetch(`https://raw.githubusercontent.com/sourcecred/cred/gh-pages/output/accounts.json`,
       )
     ).json()
     const accounts = credAccounts.accounts

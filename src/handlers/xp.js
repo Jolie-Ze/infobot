@@ -87,7 +87,7 @@ const scoreFind = async (message) => {
           },
           {
             name: 'Week before',
-            value: userWeeklyCred[lengthArray - 2].toPrecision(4) + ' cred',
+            value: userWeeklyCred[lengthArray - 2].toPrecision(3) + ' cred',
             inline: true,
           },
           {

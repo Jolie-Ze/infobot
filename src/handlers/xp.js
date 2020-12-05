@@ -96,10 +96,10 @@ const scoreFind = async (message) => {
             inline: true,
           },
         )
-        .setFooter(
+       /* .setFooter(
           'Bot made by MetaFam',
           'https://wiki.metagame.wtf/img/mg-crystal.png',
-        )
+        )*/
       message.reply(embed)
       return log(`Fetched XP for user ${targetParameter}`)
     }

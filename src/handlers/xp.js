@@ -67,8 +67,8 @@ const scoreFind = async (message) => {
 
       let embed = new MessageEmbed()
         .setColor('#ff3864')
-        .setDescription(`${targetParameter}, please find your XP progression on ${environment('PROJECT_NAME')}`) //```\
-        .setTitle(`${environment('PROJECT_NAME')} XP Ledger`)
+        .setDescription(`Hey ${targetParameter}, you look nice today!`) //```\
+        //.setTitle(`${environment('PROJECT_NAME')} Ledger`)
         .setURL(environment('GITHUB_LEDGER_EXPLORER_PATH')) //
         .setTimestamp()
         .setThumbnail(
@@ -77,17 +77,17 @@ const scoreFind = async (message) => {
         .addFields(
           {
             name: 'Total',
-            value: Math.round(userTotalCred) + ' XP',
+            value: Math.round(userTotalCred) + ' cred',
             inline: true,
           },
           {
             name: 'Last week ',
-            value: userWeeklyCred[lengthArray - 1].toPrecision(3) + ' XP',
+            value: userWeeklyCred[lengthArray - 1].toPrecision(3) + ' cred',
             inline: true,
           },
           {
             name: 'Week before',
-            value: userWeeklyCred[lengthArray - 2].toPrecision(4) + ' XP',
+            value: userWeeklyCred[lengthArray - 2].toPrecision(4) + ' cred',
             inline: true,
           },
           {

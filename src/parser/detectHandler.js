@@ -6,12 +6,12 @@ const noop = () => undefined
 const detectHandler = (message) => {
   const [requestedNamespace, requestedHandler] = message.split(' ')
   // If it's not a flag, we can safely ignore this command.
-  if (!requestedNamespace.startsWith('!ac') && !requestedNamespace.startsWith('!xp')) {
+  if (!requestedNamespace.startsWith('!ac') && !requestedNamespace.startsWith('!cred')) {
     return noop()
   }
 
-  // Filter the standalone XP handler to only allow !xp instead of !ac xp
-  if (requestedNamespace === '!ac' && requestedHandler === 'xp') {
+  // Filter the standalone cred handler to only allow !cred instead of !ac cred
+  if (requestedNamespace === '!ac' && requestedHandler === 'cred') {
     throw new RequestHandlerError(
       `could not find command with flag ${requestedHandler}`,
     )
@@ -21,10 +21,10 @@ const detectHandler = (message) => {
 
   if (requestedNamespace.startsWith('!ac')) {
     receivedHandler = handlers.get(requestedHandler)
-  } else if (requestedNamespace.startsWith('!xp')) {
+  } else if (requestedNamespace.startsWith('!cred')) {
     receivedHandler = handlers.get(requestedNamespace.substring(1))
   }
-  if (requestedNamespace !== '!ac' && requestedNamespace !== '!xp') {
+  if (requestedNamespace !== '!ac' && requestedNamespace !== '!cred') {
     throw new RequestHandlerError(
       `Could not find command with flag ${requestedNamespace}`,
     )

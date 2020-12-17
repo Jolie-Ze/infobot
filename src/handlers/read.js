@@ -52,7 +52,7 @@ const readContent = async (message) => {
                                                 
        
                                         
-                                    
+}                                  
  message.channel.send(embedREAD);
 
 

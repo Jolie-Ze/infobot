@@ -1,3 +1,4 @@
+const MessageEmbed = require('discord.js').MessageEmbed
 const readContent = async (message) => {
 
         const readTitle1 = "1. [A living history of sourcecred]"

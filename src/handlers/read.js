@@ -53,7 +53,7 @@ const readContent = async (message) => {
        
                                         
 }                                  
- message.channel.send(embedREAD);
+ message.reply(embedREAD);
 
 
 module.exports = readContent

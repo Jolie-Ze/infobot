@@ -12,8 +12,8 @@ const handlers = new Map([
   ['signup', signupHandler],
   ['cred', credHandler],
   ['read', readHandler],
-  ['listen', lisentHandler],
-  ['watch', lisentHandler]
+  ['listen', listentHandler],
+  ['watch', watchHandler]
 ])
 
 module.exports = handlers

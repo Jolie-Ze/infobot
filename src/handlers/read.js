@@ -52,8 +52,8 @@ const readContent = async (message) => {
                                                 
        
                                         
-}                                  
+                                
  message.reply(embedREAD);
 
-
+}  
 module.exports = readContent

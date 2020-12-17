@@ -25,7 +25,7 @@ const listenContent = async (message) => {
                 .addFields(                        
             
                             {
-                                name: "people & the SourceCred project",
+                                name: "Audio : people & the SourceCred project",
                                 value: listenTitle1 + listenLink1 + "\n " + listenTitle2 + listenLink2 + "\n " + listenTitle3 + listenLink3+ "\n " + listenTitle4 + listenLink4,
                                 inline: true,                                                                                                      
                             }

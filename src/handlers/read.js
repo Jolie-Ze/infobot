@@ -27,7 +27,7 @@ const readContent = async (message) => {
             .setColor("#ff3864")
             .setThumbnail("https://raw.githubusercontent.com/sourcecred/sourcecred/master/src/assets/logo/rasterized/logo_64.png")
 
-            .setDescription(" Hey, thanks for asking.")
+            .setDescription(" Hey, some reading across our differents platforms. ")
             .addFields(                        
         
                         {

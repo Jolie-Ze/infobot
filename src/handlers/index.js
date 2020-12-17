@@ -12,7 +12,7 @@ const handlers = new Map([
   ['signup', signupHandler],
   ['cred', credHandler],
   ['read', readHandler],
-  ['listen', listentHandler],
+  ['listen', listenHandler],
   ['watch', watchHandler]
 ])
 

@@ -22,7 +22,7 @@ const readContent = async (message) => {
         const readLink7 = "(https://medium.com/sourcecred/network-formation-games-7a74491abf0e)"
 
 
-            let embedREAD = new Discord.MessageEmbed()
+            let embedREAD = new MessageEmbed()
             .setColor("#ff3864")
             .setThumbnail("https://raw.githubusercontent.com/sourcecred/sourcecred/master/src/assets/logo/rasterized/logo_64.png")
 

@@ -6,7 +6,7 @@ describe('detectHandler', () => {
     expect(detectHandler('! signup')).toEqual(handlers.get('signup'))
   })
 
-  test('it should properly parse xp command', () => {
+  test('it should properly parse cred command', () => {
     expect(detectHandler('!cred username')).toEqual(handlers.get('cred'))
   })
 

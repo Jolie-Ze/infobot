@@ -7,7 +7,7 @@ const detectHandler = (message) => {
 
   const [requestedNamespace, requestedHandler] = message.split(' ')
   // If it's not a flag, we can safely ignore this command.
-  if (!requestedNamespace.startsWith('!'){// && !requestedNamespace.startsWith('!cred')){
+  if (!requestedNamespace.startsWith('!')){// && !requestedNamespace.startsWith('!cred')){
     return noop()
   }
 

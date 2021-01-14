@@ -81,7 +81,7 @@ const scoreFind = async (message) => {
             inline: true,
           },
           {
-            name: 'Last week ',
+            name: 'Last 7 days ',
             value: userWeeklyCred[lengthArray - 1].toPrecision(3) + ' cred',
             inline: true,
           },

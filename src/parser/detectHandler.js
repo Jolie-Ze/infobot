@@ -5,8 +5,9 @@ const noop = () => undefined
 
 const detectHandler = (message) => {
 
+  const [requestedNamespace, requestedHandler] = message.split(' ')
   // If it's not a flag, we can safely ignore this command.
-  if (!requestedNamespace.startsWith('!')) {
+  if (!requestedNamespace.startsWith('!'){// && !requestedNamespace.startsWith('!cred')){
     return noop()
   }
 
@@ -20,7 +21,7 @@ const detectHandler = (message) => {
   let receivedHandler = null
 
   if (requestedNamespace.startsWith('!')) {
-    receivedHandler = handlers.get(requestedHandler.substring(1))
+    receivedHandler = handlers.get(requestedNamespace.substring(1))
   
 }
 /* else if (requestedNamespace.startsWith('!cred')) {

@@ -1,11 +1,15 @@
 # SourceCred infobot 
 
 
-It's based on the Aracred & the Metagame bots. The changes made to suit the needs of SourceCred: 
+It's based on the Aracred & the Metagame bots. The changes made to suit the needs of SourceCred are: 
 
-- the addition of 3 handlers : `!read !watch !listen`. This will enable the bot to provide links to resources for newcomers
+- the addition of 3 handlers : `!read !watch !listen`. 
+    - This will enable the bot to provide links to resources for newcomers
+    - The links can be edited easily by the community in order to update the links
 
 - the simplification of the handler : `"!"` instead of `"!ac"`
+
+- some minor design & typo changes
 
 
 

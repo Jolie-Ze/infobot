@@ -1,8 +1,18 @@
-![Aracred](https://github.com/aracred/bot/workflows/CI/badge.svg)
+# SourceCred infobot 
 
-# bot
 
-:robot: Aracred Bot to quickly onboard users into an Aracred instance. Don't be afraid to fork and modify this!
+It's based on the Aracred & the Metagame bots. The changes made to suit the needs of SourceCred: 
+
+- the addition of 3 handlers : `!read !watch !listen`. This will enable the bot to provide links to resources for newcomers
+
+- the simplification of the handler : `"!"` instead of `"!ac"`
+
+
+
+
+
+
+
 
 ## Quickstart
 

@@ -28,13 +28,10 @@ It's based on the Aracred & the Metagame bots. The changes made to suit the need
 
 ## Quick end-user guide 🦅
 
-Interacting with the bot is simple; it offers 3 commands, all of them starting with the ! flag:
+Interacting with the bot is simple; it offers a command with the ! flag:
 
-- "!help": Shows the available commands, along with an example for each one.
+- "!help": Shows the available commands
 
-- "!signup": Signs the user up for generating cred through their contributions, by modifying the `project.json` file in the configured Aracred repo.
-
-- "!addaddress": Signs the user up for receiving tokens minted to match their generated cred, by modifying the `addressbook.json` file in the configured Aracred repo.
 
 ## Developer quick start 👩‍💻
 

@@ -11,7 +11,7 @@ const filterAccount = (obj, targetUserDiscordID) => {
   const discordAlias = obj.account.identity.aliases.filter(
     alias => {
       const parts = NodeAddress.toParts(alias.address)
-      return parts.indexOf('discord') > 0
+      return parts.indexOf('discord') > 0 && parts.indexOf(targetUserDiscordID) > 0
     })
   if (discordAlias.length === 1) {
     // Retrieve the Discord ID

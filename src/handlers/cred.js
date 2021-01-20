@@ -44,7 +44,7 @@ const scoreFind = async (message) => {
     const targetUserDiscordID = getDiscordID(targetParameter)
     if (isNaN(targetUserDiscordID)) {
       return message.reply(
-        'You must tag a user to use this command, try `!ac xp @your-discord-username` or `!ac help` if you need help',
+        'You must tag a user to use this command, try `!cred @your-discord-username` or `!help` if you need help',
       )
     }
 
@@ -108,7 +108,7 @@ const scoreFind = async (message) => {
   } catch (err) {
     error(err)
     message.reply(
-      'Command parsing failed. Please use the !ac help command to see how to use the requested command properly.',
+      'Command parsing failed. Please use the !help command to see how to use the requested command properly.',
     )
   }
 }

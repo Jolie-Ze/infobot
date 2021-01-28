@@ -3,11 +3,11 @@ const handlers = require('../handlers/index')
 
 describe('detectHandler', () => {
   test('it should properly parse a command name', () => {
-    expect(detectHandler('!ac signup')).toEqual(handlers.get('signup'))
+    expect(detectHandler('!cred')).toEqual(handlers.get('cred'))
   })
 
   test('it should properly parse xp command', () => {
-    expect(detectHandler('!xp username')).toEqual(handlers.get('xp'))
+    expect(detectHandler('!read')).toEqual(handlers.get('read'))
   })
 
   test('it should ignore empty strings', () => {
